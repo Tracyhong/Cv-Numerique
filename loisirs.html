@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title> ePortfolio | Tracy HONG Loisirs</title>
+		<link rel="icon" href="Images/logo.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="Tracy HONG">
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+		<!-- end mobile specific info -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<!--CARROUSEL-->
+		<script src="bootstrap/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+	</head>
+	<body ontouchstart="">
+		<div id="globale">	
+			<div style="clear:both"></div>
+			<header> <!-- balise html5 equivalant à <div id="header"> -->
+				<nav>
+					<!--POUR petite fenetre-->
+					<input type="checkbox" id="check">
+					<label for="check" class="checkbtn">
+						<i class ="fas fa-bars"></i>
+					</label>
+					<!--logo et nom-->
+					<div class="logo"></div>
+					<div id="nom">
+						<h1>Tracy HONG</h1>
+						<div class="trait"></div>
+						<p> Etudiante de 1ère année en informatique </p>
+					</div>
+					<ul>
+						<li ><a href="accueil.html"><span class="glyphicon glyphicon-home"></span>Accueil</a> </li>
+						<li><a href="experiences.html"><span class="glyphicon glyphicon-folder-close"></span>Expériences</a></li>
+						<li><a href="competences.html"><span class="glyphicon glyphicon-stats"></span>Compétences<span class="fa fa-plus"></span></a>
+							<ul>
+								<li><a href="competences.html#langue">Langues</a></li>
+								<li><a href="competences.html#info">Informatique</a></li>
+								<li><a href="competences.html#atout">Atouts</a></li>
+							</ul>
+						</li>
+						<li><a class="active" href="loisirs.html"><span class="glyphicon glyphicon-thumbs-up"></span>Loisirs<span class="fa fa-plus"></span></a>
+							<ul>
+								<li><a href="loisirs.html#manga">Mangas / Animes</a></li>
+								<li><a href="loisirs.html#sport">Sports</a></li>
+								<li><a href="loisirs.html#voyage">Voyages</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span>Contact</a></li>
+					</ul>
+				</nav><!-- fin nav -->
+
+			</header>
+			
+			<div id="page">
+				<!--Contenu pour loisirs-->
+
+				<section class="sec1">
+					<h1> Mes loisirs !</h1>
+				</section>
+				<div class="container">
+					<article>
+						<a id="manga" href="#manga"><h3><span class="glyphicon glyphicon-certificate"></span>Mangas / Animés</h3></a>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+									<img id="manga-universe" src="Images/manga.jpeg" alt="manga universe">
+								</div>
+								<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+									<p id="p">J'adore les mangas et les animés.<br>J'ai d'ailleurs choisi avec mon groupe, pour le le PJS1, de travailler sur l'animation japonaise.<br> <a id="PJS1" href="https://detchavicheva.wixsite.com/japanimes" target="_blank">Pour y accéder</a> </p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<article>
+								<a id="sport" href="#sport"><h3><img class="logo-lo" src="Images/basketball.png" alt="logo basket">Basketball</h3></a>
+								<p>J'ai appartenu à un club de sport pendant 2 années, durant lesquelles je jouais beaucoup de matchs.</p>
+							</article>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<article>
+								<a id="sport1" href="#sport1"><h3><img class="logo-lo" src="Images/karate.png" alt="logo karaté">Karaté</h3></a>
+								<p>Lorsque j'étais plus jeune, je participais à plusieurs compétitions où je remportais la 1ère place, avec des médailles d'or et des coupes.<br>J'ai arrêté lorsque j'ai eu la ceinture bleue.</p>
+							</article>
+						</div>
+					</div>
+
+					<article>
+						<a id="voyage" href="#voyage"><h3><span class="glyphicon glyphicon-globe"></span>Voyages</h3></a>
+						<p>J'adore voyager ! Voici un petit carousel de certains de mes voyages</p>
+					</article>
+					<!--CARROUSEL -->
+					<div class="container">
+						<div id="monCarroussel" class="carousel slide" data-ride="carousel" data-interval="3000">
+							<ol class="carousel-indicators">
+								<!-- Chaque marqueur fait référence à l'id du carrousel par l'attribut data-target-->
+								<!-- Chaque marqueur utilise l'attribut data-slide-to avec le n° de séquence -->
+								<li data-target="#monCarroussel" data-slide-to="0" class="active"></li>
+								<li data-target="#monCarroussel" data-slide-to="1"></li>
+								<li data-target="#monCarroussel" data-slide-to="2"></li>
+							</ol>
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xm-12">
+									<!-- Conteneur du carrousel -->
+									<div class="carousel-inner">
+										<div class="item active">
+											<img src="images/shanghai.jpg" alt="shangahi">
+											<div class="carousel-caption">
+												<h3>Shanghaï</h3>
+												<p>En Chine</p>
+											</div>
+										</div>
+										<div class="item">
+											<img src="images/hoian.png" alt="vietnam">
+											<div class="carousel-caption">
+												<h3>Hội An</h3>
+												<p>Au Vietnam</p>
+
+											</div>
+										</div>
+										<div class="item">
+											<img src="images/rome.jpeg" alt="rome">
+											<div class="carousel-caption">
+												<h3>Rome</h3>
+												<p>En Italie</p>
+											</div>
+										</div>
+									</div>   
+									<a class="left carousel-control" href="#monCarroussel" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+									<a class="right carousel-control" href="#monCarroussel" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!--fin container-->
+				
+			</div> <!-- fin id="page"-->
+			
+			<footer><a href="#globale">Haut<span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+			</footer>
+		</div>	<!-- fin globale -->
+	</body>
+</html>

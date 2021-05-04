@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title> ePortfolio | Tracy HONG Compétences</title>
+		<link rel="icon" href="Images/logo.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="Tracy HONG">
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+		<!-- end mobile specific info -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>    </head>
+	<body ontouchstart="">
+		<div id="globale">	
+			<div style="clear:both"></div>
+			<header> <!-- balise html5 equivalant à <div id="header"> -->
+				<nav>
+					<!--POUR petite fenetre-->
+					<input type="checkbox" id="check">
+					<label for="check" class="checkbtn">
+						<i class ="fas fa-bars"></i>
+					</label>
+					<!--logo et nom-->
+					<div class="logo"></div>
+					<div id="nom">
+						<h1>Tracy HONG</h1>
+						<div class="trait"></div>
+						<p> Etudiante de 1ère année en informatique </p>
+					</div>
+					<ul>
+						<li ><a href="accueil.html"><span class="glyphicon glyphicon-home"></span>Accueil</a> </li>
+						<li><a href="experiences.html"><span class="glyphicon glyphicon-folder-close"></span>Expériences</a></li>
+						<li><a class="active" href="competences.html"><span class="glyphicon glyphicon-stats"></span>Compétences<span class="fa fa-plus"></span></a>
+							<ul>
+								<li><a href="competences.html#langue">Langues</a></li>
+								<li><a href="competences.html#info">Informatique</a></li>
+								<li><a href="competences.html#atout">Atouts</a></li>
+							</ul>
+						</li>
+						<li><a href="loisirs.html"><span class="glyphicon glyphicon-thumbs-up"></span>Loisirs<span class="fa fa-plus"></span></a>
+							<ul>
+								<li><a href="loisirs.html#manga">Mangas / Animes</a></li>
+								<li><a href="loisirs.html#sport">Sports</a></li>
+								<li><a href="loisirs.html#voyage">Voyages</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span>Contact</a></li>
+					</ul>
+				</nav><!-- fin nav -->
+
+			</header>
+
+
+
+			<div id="page">
+				<!--Contenu pour compétences-->
+				<section class="sec1">
+					<h1> Mes Compétences !</h1>
+
+				</section>
+				<div class="container">
+					<article>
+						<a id="langue" href="#langue"><h3><span class=" glyphicon glyphicon-bullhorn "></span>LANGUES</h3></a>
+						<p>Français : langue maternelle</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						
+						<p>Chinois cantonais : </p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<p>Anglais : niveau B1</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<p>Allemand : niveau A2</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>						
+					</article>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<article>
+								<a id="info" href="#info"><h3 id="en-cours-app"><span class=" glyphicon glyphicon-refresh "></span>En cours d'apprentissage</h3></a>
+								<p>Bureautique<br>Langages informatique</p>
+								<img class="logo-comp" src="Images/ccpp.png" alt="c/c++"><img class="logo-comp" src="Images/htmlcss.png" alt="html/css"><img class="logo-comp" src="Images/sql.png" alt="sql"><img class="logo-comp" src="Images/bash-logo.jpeg" alt="bash">
+							</article>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<article>
+								<a id="atout" href="#atout"><h3><span class=" glyphicon glyphicon-ok-circle "></span>Atout</h3></a>
+								<p>Autonomie<br>Travail en équipe<br>Rapidité à s'adapter et à apprendre<br>Assiduité</p>
+							</article>
+						</div>
+					</div>
+
+				</div>
+
+			</div> <!-- fin id="page"-->
+				
+			<footer><a href="#globale">Haut<span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+			</footer>
+		</div>	<!-- fin globale -->
+	</body>
+</html>

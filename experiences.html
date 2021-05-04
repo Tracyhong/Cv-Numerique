@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title> ePortfolio | Tracy HONG Expériences</title>
+		<link rel="icon" href="Images/logo.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="Tracy HONG">
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+		<!-- end mobile specific info -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>    </head>
+	<body ontouchstart="">
+		<div id="globale">	
+			<div style="clear:both"></div>
+			<header> <!-- balise html5 equivalant à <div id="header"> -->
+				<nav>
+
+					<!--POUR petite fenetre-->
+					<input type="checkbox" id="check">
+					<label for="check" class="checkbtn">
+						<i class ="fas fa-bars"></i>
+					</label>
+					<!--logo et nom-->
+					<div class="logo"></div>
+					<div id="nom">
+						<h1>Tracy HONG</h1>
+						<div class="trait"></div>
+						<p> Etudiante de 1ère année en informatique </p>
+					</div>
+					<ul>
+						<li ><a href="accueil.html"><span class="glyphicon glyphicon-home"></span>Accueil</a> </li>
+						<li><a class="active" href="experiences.html"><span class="glyphicon glyphicon-folder-close"></span>Expériences</a></li>
+						<li><a href="competences.html"><span class="glyphicon glyphicon-stats"></span>Compétences<span class="fa fa-plus"></span></a>
+							<ul>
+								<li><a href="competences.html#langue">Langues</a></li>
+								<li><a href="competences.html#info">Informatique</a></li>
+								<li><a href="competences.html#atout">Atouts</a></li>
+							</ul>
+						</li>
+						<li><a href="loisirs.html"><span class="glyphicon glyphicon-thumbs-up"></span>Loisirs<span class="fa fa-plus"></span></a>
+							<ul>
+								<li><a href="loisirs.html#manga">Mangas / Animes</a></li>
+								<li><a href="loisirs.html#sport">Sports</a></li>
+								<li><a href="loisirs.html#voyage">Voyages</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span>Contact</a></li>
+					</ul>
+				</nav><!-- fin nav -->
+			</header>
+
+
+			<div id="page">
+				<!--Contenu pour experiences-->
+				<section class="sec1">
+					<h1>Mes Expériences !</h1>
+				</section>
+				<article>
+					<h3><a href="https://www.simmons-simmons.com/en/offices/paris" target="_blank"><img class="logo-exp" src="Images/simmonssimmons.png" alt="logo simmons&simmons"></a>Stage de 3ème : cabinet d'avocat</h3>
+					<p>Durant ce stage d'observation, j'ai pu découvrir le métier d'avocat.<br>Je portais assistance à la vie d'un cabinet d'avocat anglo-saxon : accueil des clients, assistance à plusieurs audiences au Palais de Justice et divers tâches d'assistance aux comptables et avocats au Barreau de Paris. </p>
+				</article>
+				<article>
+					<h3><img class="logo-exp" src="Images/benevolat.png" alt="Force Intérim">Bénévolat</h3>
+					<p>
+						Je participais à des maraudes mensuelles, à Paris.<br>En journée, tri des vêtements et des objets collectés puis distribution auprès de personnes sans domicile fixe, en soirée.
+					</p>
+				</article>
+				<article id="dernier">
+					<h3><a href="http://www.force-interim.com/" target="_blank"><img class="logo-exp" src="Images/forceinterim.png" alt="Force Intérim"></a>Mission intérim pendant l'été</h3>
+					<p>J'effectuais plusieurs missions aux heures de mon choix.<br>  -  Distribution de gel hydroalcoolique au parc des expositions, Villepinte et pendant des matchs de football, au Stade de France.<br>  -  Agent d'accueil RATP en gare de Châtelet-Les Halles.</p>
+				</article>
+			</div> <!-- fin id="page"-->
+				
+			<footer><a href="#globale">Haut<span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+			</footer>
+		</div>	<!-- fin globale -->
+	</body>
+</html>
